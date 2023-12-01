@@ -1,0 +1,324 @@
+html
+{
+    max-width: 100%;
+}
+
+.hat 
+{
+    text-align: center;
+}
+
+#logo
+{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: white;
+}
+
+p
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a
+{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
+
+#content
+{
+    margin-right: 80px;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+.main-catalog
+{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+h1
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item p
+{
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.main-catalog img
+{ 
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 165px;
+    width: 280px;
+    border-radius: 0px;
+    max-width: 100%;
+}
+
+.promo-catalog 
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 15px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+}
+
+.item:hover
+{
+    opacity: 0.25;
+}
+
+.promo-catalog img
+{
+    height: 81px;
+    width: 144px;
+    border-radius: 5px;
+    margin-top: 0px;
+    max-width: 100%;
+}
+
+body
+{
+    background-color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (min-width: 414px)
+ {
+    #logo {
+      width: 350px;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    #content
+    {
+        font-size: 25px;
+    }
+
+    #site
+    {
+        font-size: 25px;
+    }
+    
+    h1
+    {
+        font-size: 25px;
+    }
+
+    .main-catalog img
+    {
+        width: 350px;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .promo-catalog img
+    {
+        width: 190px;
+        height: 190px;
+        
+    }
+}
+
+@media (min-width: 640px)
+ {
+    #logo {
+      width: 450px;
+      height: auto;
+    }
+
+    #content
+    {
+        font-size: 30px;
+    }
+
+    #site
+    {
+        font-size: 30px;
+    }
+    
+    h1
+    {
+        font-size: 35px;
+    }
+
+    .main-catalog img
+    {
+        width: 550px;
+        height: auto;
+    }
+
+    .promo-catalog img
+    {
+        width: 290px;
+        height: 290px;
+    }
+    h2
+    {
+        font-size: 27px;
+    }
+
+    .promo-catalog p
+    {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1280px)
+{
+    #logo
+     {
+        width: 160px;
+        height: 160px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 0px;
+        border-radius: 10px;
+    }
+
+    .hat p
+    {
+        text-align: right;
+        margin-right: 3px;
+    }
+
+    .hat hr
+    {
+        width: 350px;
+        margin-right:0px;
+    }
+
+    body
+    {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    h1
+    {
+        margin-top: 50px;
+        margin-left: 500px;
+        text-align: left;
+        font-size: 50px;
+    }
+
+    .main-catalog
+    {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .main-catalog p
+    {
+        margin-bottom: 24px;
+    }
+
+    .main-catalog img
+    {
+        width: 320px;
+        height: 180px;
+        border-radius: 15px;
+    }
+
+    h2
+    {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .promo-catalog
+    {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .promo-catalog img
+    {
+        width: 280px;
+        height: 280px;
+        border-radius: 15px;
+    }
+
+    .promo-catalog p
+    {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1440px)
+{
+    .main-catalog img
+    {
+        width: 360px;
+        height: 260px;
+        border-radius: 15px;
+    }
+
+    .promo-catalog p
+    {
+        font-size: 27px;
+    }
+
+    .promo-catalog img
+    {
+        width: 320px;
+        height: 320px;
+        border-radius: 15px;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JS</title>
+</head>
+<body>
+<script>
+    console.log("Задание №1");
+    let apple = 10;
+    alert(apple);
+    console.log(apple);
+
+    console.log("Задание №2");
+    let cel = 56;
+    let str = '100';
+    let boolic = true;
+    console.log(cel + str);
+    console.log(cel + boolic);
+    console.log(str + boolic);
+    console.log(cel + str + boolic);
+    console.log(str + boolic + cel);
+    console.log(boolic + cel + str);
+
+    console.log("Задание №3");
+    let mass = new Array(10);
+    for(let i=0; i<mass.length; i++)
+    {
+        mass[i] = Math.floor(-10 + Math.random() * 25);
+    }
+    console.log(mass);
+    mass = mass.filter((num) => num >= 0);
+    console.log(mass);
+
+    console.log("Задание №4");
+    function getRandomNum() {
+        return Math.floor(Math.random() * 100);
+    }
+    console.log(getRandomNum());
+    function mulMassOnNum(m, num) {
+        return m.map((a) => a * num);
+    }
+    let m = [2, 4, 8, 16, 32];
+    let num = 32;
+    console.log(mulMassOnNum(m, num));
+    let genRandomWord = function() {
+        let abc = 'abcdefghijklmnopqrstuvwxyz'
+        let word = "";
+
+        for (let i = 0; i < 5; i++) {
+            let randomI = Math.floor(Math.random() * abc.length);
+            word += abc[randomI];
+        }
+        return word;
+    }
+    console.log(genRandomWord());
+    
+    console.log("Задание №5");
+    let person = {};
+    person.firstName = 'Вячеслав';
+    person.surname = 'Горбанев';
+    person.patronymic = 'Владимирович';
+    person.birthday = '2003';
+    person.hobby = 'Музыка';
+    person.group = 'AИБ-3-043';
+
+    person.getInfo = function() {
+        let currentDate = new Date();
+        let birthdate = new Date(this.birthday);
+        let age = currentDate.getFullYear() - birthdate.getFullYear();
+        return `ФИО: ${this.surname} ${this.firstName} ${this.patronymic}
+            \nГод рождения: ${this.birthday}\nХобби: ${this.hobby}\nВозраст: ${age}`;
+    }
+    alert(person.getInfo());
+    console.log(person.getInfo());
+
+    let salaries = {
+        Даниил: 2000,
+        Игорь: 3000,
+        Елена: 2500,
+        Михаил: 3500,
+        Валерия: 4000,
+        Елизавета: 2800,
+        Никита: 3200,
+        Владислав: 2700,
+        Иван: 3800,
+        Георгий: 3100
+    };
+    console.log(salaries);
+    let totalSalary = 0;
+    for (let key in salaries) {
+        totalSalary += salaries[key];
+    }
+    console.log("Общая зарплата: " + totalSalary);
+</script>
+</body>
+</html>
