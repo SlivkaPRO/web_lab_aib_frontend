@@ -1,0 +1,121 @@
+/* App.css */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #bc87ebd3, #6632cd);
+    margin: 0;
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #root {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .App {
+    width: 800px;
+    margin: 20px;
+  }
+  
+  .Post {
+    border: 3px solid rgb(236, 173, 14);
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+  }
+  
+  .post__text {
+    flex: 2;
+  }
+  
+  .post__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  button {
+    margin-top: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  button[style*="red"] {
+    background-color: red;
+    color: white;
+  }
+  
+  button[style*="default"] {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  button[style*="default"]:hover {
+    background-color: #45a049;
+  }
+  
+  button[style*="default"]:active {
+    background-color: #3e8e41;
+  }
+  
+  .PostList {
+    margin: 20px;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #af4c89;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  button.not-liked {
+    background-color: #4caf4fc7;
+    color: white;
+  }
+  
+  button.liked {
+    background-color: #ff4500; 
+    color: white;
+  }
+  
+  .tags {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  p[style*="red"] {
+    color: red;
+  }
+  
