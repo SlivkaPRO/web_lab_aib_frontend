@@ -10,13 +10,13 @@ html{
 
 /* Оформление элементам grid-контейнера: */
 .container * {
-  border-radius: 10px;
+  border-radius: 180px;
   /* background-color: rgba(82, 29, 179, 0.5); */
   text-align: center;
 }
 
 .A {
-  border: 1px solid;
+  border: 2px solid;
   grid-area: 1 / 1 / 2 / 6;
 }
 

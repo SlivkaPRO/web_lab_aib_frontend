@@ -10,14 +10,13 @@ html{
 
 /* Оформление элементам grid-контейнера: */
 .container * {
-  border-radius: 10px;
   /* background-color: rgba(82, 29, 179, 0.5); */
   text-align: left;
   margin: 5px;
 }
 
 .R {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 2/ 2;
 }
 
 .G {
@@ -27,7 +26,25 @@ html{
 .B {
   grid-area: 3 / 1 / 4 / 2;
 }
-  
+
+.R ::after {
+  content: url('1.jpg');
+  display: block;
+  margin-top: 10px;
+}
+
+.G ::after {
+  content: url('2.jpg');
+  display: block;
+  margin-top: 10px;
+}
+
+.B ::after {
+  content: url('3.jpeg');
+  display: block;
+  margin-top: 10px;
+}
+
 #color-area {
   width: 300px;
   height: 300px;
