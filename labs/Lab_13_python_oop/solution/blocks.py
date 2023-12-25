@@ -34,7 +34,8 @@ class TopPayersBlock(BaseXlsBlock):
             client_info = next(client for client in clients if client['id'] == payer['client_id'])
             fio = client_info['fio']
             self.worksheet.write(self.row + i, self.col, f"{i}. {fio}: {payer['total_amount']}")
-            
+
+
 class TopCitiesBlock(BaseXlsBlock):
     NAME = "География клиентов"
 
@@ -55,6 +56,7 @@ class TopCitiesBlock(BaseXlsBlock):
 
         for i, (city, count) in enumerate(top_cities, start=1):
             self.worksheet.write(self.row + i, self.col, f"{i}. {city}: {count} клиентов")
+
 
 class AccountStatusBlock(BaseXlsBlock):
     NAME = "Анализ состояния счёта"
